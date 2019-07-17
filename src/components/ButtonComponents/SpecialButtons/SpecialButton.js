@@ -1,8 +1,8 @@
 import React from "react";
 
-const SpecialButton = ({special}) => {
+function SpecialButton({special}) {
   return (
-    <button key={special}>{special}</button>
+    <button key={special} onClick={() => console.log(special)}>{special}</button>
   );
 };
 
